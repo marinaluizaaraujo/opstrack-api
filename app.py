@@ -3,9 +3,9 @@ from flask import Flask
 app = Flask (__name__)
 
 # Teste de diff :)
-@app.route('/')
+@app.route('/status')
 def status():
-    return {'Servico': 'OpsTrackAPI', 'status': 'online'}
+    return {'servico': 'OpsTrack API', 'status': 'online'}
 
 @app.route('/tickets')
 def tickets():
